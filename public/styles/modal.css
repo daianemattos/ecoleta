@@ -1,0 +1,90 @@
+#modal {
+    background-color: #0E0A14ef; /*cor fundo*/
+    height: 100vh; /*altura*/
+    width: 100vw; /*largura*/
+
+    position: fixed; /*posição fixa na págna*/
+    top: 0; /*fixado no topo*/
+
+    display: flex; /*lado a lado*/
+    justify-content: center; /*justificado no centro*/
+    align-items: center; /*itens centralizados*/
+
+    transition: 400ms; /*tempo de transição*/
+}
+
+#modal.hide { /*Quando o modal tiver uma classe hide*/
+    display: none; /*o display não aparecerá / vai sumir*/
+}
+
+#modal .content {
+    color: white; /*cor da fonte*/
+
+    width: 420px; /*largura*/
+}
+
+#modal .header {
+    display: flex; /*lado a lado*/
+    align-items: center; /*itens centralizados*/
+    justify-content: space-between; /*espaçamento entre eles*/
+    margin-bottom: 42px; /*margem entre o h1 e a parte de baixo*/
+}
+
+#modal .header a {
+    background-image: url("../assets/x.svg"); /*ícone fechar*/
+
+    width: 20px; /*largura*/
+    height: 20px; /*altura*/
+
+    display: flex; /*para alinhar*/
+
+    font-size: 0.01px; /*fonte minúscula para não ficar visível, mas o leitor de conteúdo ler o a*/
+}
+
+#modal .header h1 {
+    color: white; /*cor fonte h1*/
+
+    font-size: 36px; /*tamanho da fonte*/
+    line-height: 42px; /**/
+}
+
+#modal form label {
+    font-size: 14px; /*tamanho da fonte*/
+    line-height: 16px; /**/
+
+    display: block; /*pra forçar que o input fique na linha toda*/
+    margin-bottom: 8px; /*espaço entre o input e o label*/
+}
+
+#modal form .field {
+    display: flex; /*lado a lado o input e barrinha de pesquisa*/
+}
+
+#modal form input {
+    flex: 1; /*preenchimento automático / pega todo o espaço que sobra pra ele*/ 
+
+    background-color: #f0f0f5; /*cor de fundo input*/
+
+    border-radius: 8px 0 0 8px; /*arredondamento das bordas */
+    border: 0; /*tirar a borda automática*/
+
+    padding: 16px 24px; /*espaçamento interno do input*/
+    
+    font-size: 16px; /*tamanho fonte*/
+    color: #6c6c80; /*cor fonte*/
+}
+
+#modal form button {
+    width: 72px; /*largura*/
+    height: 72px; /*altura*/
+
+    background-color: var(--primary-color); /*cor de fundo botão pesquisa*/
+
+    border-radius: 0 8px 8px 0; /*arredondamento das bordas*/
+    border: 0; /*tira a borda automática*/
+}
+
+#modal form button:hover {
+    background-color: #2fb85e; /*cor fundo do hover*/
+}
+

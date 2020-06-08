@@ -1,0 +1,99 @@
+body::after {
+    content: "";
+    position: fixed; /*posição fixa*/
+    background: white; /*cor fundo*/
+    top: 260px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    
+#page-search-results {
+    width: 90%; /*largura*/
+    max-width: 1100px; /*largura máxima*/
+
+    margin: 0 auto; /*0 cima baixo, auto laterais preenchidas / alinhamento de caixa pelo lado de fora*/
+}
+
+#page-search-results header {
+    margin-top: 48px;
+    display: flex; /*lado a lado*/
+    justify-content: space-between; /*espaçamento entre eles*/
+    align-items: center; /*alinhamento entre os itens*/
+}
+
+#page-search-results header a {
+    color: var(--title-color); /*cor do link*/
+    font-weight: bold; /*peso na fonte*/
+
+    display: flex; /*lado a lado*/
+    align-items: center; /*alinhamento entre os itens*/
+}
+
+#page-search-results a span {
+    margin-right: 16px; /*margim à direita*/
+    background-image: url('../assets/arrow-left.svg');
+
+    display: flex; /*para aparecer*/
+
+    width: 20px; /*largura*/
+    height: 24px; /*altura*/
+}
+
+main {
+    margin: 48px; /*margem cima e baixo*/
+}
+
+main h4 {
+    font-weight: normal; /**/
+    font-family: Roboto, sans-serif; /*estilo fonte*/
+
+    margin-bottom: 32px; /*margem até a imagem*/
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*3 colunas*/
+    
+    gap: 24px;
+}
+
+main .card img {
+    width: 100%; /*largura*/
+    height: 150px; /*altura*/
+
+    object-fit: cover; /*preenche a imagem*/
+
+    border-radius: 8px 8px 0 0; /*bordas das imagens arredondadas*/
+}
+
+main .card h1 {
+    margin-top: 32px; /*margem topo*/
+
+    font-size: 36px; /*tamanho fonte*/
+    line-height: 41px; /**/
+    color: #322153; /*cor fonte*/
+}
+
+main .card h3 {
+    margin: 24px 0; /*margem cima e baixo e laterais*/
+
+    font-family: Roboto; /*estilo fonte*/
+    font-weight: bold; /*peso da fonte*/
+
+    font-size: 24px; /*tamanho fonte*/
+    line-height: 34px;
+
+    color: var(--primary-color);
+}
+
+main .card p {
+    font-size: 16px; /*tamanho fone*/
+    line-height: 26px;
+
+    color: #6C6C80; /*cor fonte*/
+}
+
+
+

@@ -1,0 +1,111 @@
+#page-home {
+    height: 100vh; /*altura*/
+    background: url('../assets/home-background.svg') no-repeat; /*imagem de fundo*/
+    background-position: 40vw bottom; /*posição no eixo x (35 largura) e y (bottom)*/
+}
+
+#page-home .content {
+    width: 90%; /*largura*/
+    max-width: 1100px; /*máximo de largura*/
+    height: 100%;
+    
+    margin-left: auto; /*margem pra esquerda automática*/
+    margin-right: auto; /*margem pra direita automática*/
+
+    display: flex; 
+    flex-direction: column; /*flow em coluna*/
+}
+
+#page-home header {
+    margin-top: 48px;
+
+    display: flex; /*um elemento ao lado do outro*/
+    align-items: center; /*um item alinhado com o outro*/
+    justify-content: space-between; /*espaço entre eles*/
+}
+
+#page-home header a {
+    display: flex;
+
+    color: var(--tittle-color); /*cor da fonte*/
+    font-weight: 700; /*peso da fonte*/
+}
+
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../assets/log-in.svg'); /*imagem de fundo*/
+
+    width: 20px; /*largura*/
+    height: 20px; /*altura*/
+}
+
+#page-home main {
+    max-width: 560px; /*largura máxima*/
+
+    flex: 1; /*crescimento padrão*/
+
+    display: flex;
+    flex-direction: column; /*flow em coluna*/
+    justify-content: center; /*centralizando*/
+}
+
+#page-home main h1 {
+    font-size: 54px; /*tamanho da fonte*/
+}
+
+#page-home main p {
+    font-size: 24px; /*tamanho da fonte do texto*/
+    line-height: 38px; /*altura da linha do texto*/
+    margin-top: 24px;/*espaçamento entre o elemento acima*/
+}
+
+#page-home main a {
+    width: 100%; /*largura do botão*/
+    max-width: 360px; /*largura máxima*/
+    height: 72px; /*altura do botão*/
+
+    border-radius: 8px; /*arredondamento das bordas*/
+
+    display: flex; /*para utilizar o align-items*/
+    align-items: center; /*item alinhado ao centro*/
+
+    margin-top: 40px; /*separar o botão do texto*/
+
+    background-color: var(--primary-color);
+
+    transition: 400ms; /*tempo de transição para o hover*/
+}
+
+#page-home main a:hover {
+    background-color: #2fb86e;
+}
+
+#page-home main a span {
+    width: 72px; /*largura*/
+    height: 72px; /*altura*/
+
+    border-top-left-radius: 8px; /*para corrigir as bordas*/
+    border-bottom-left-radius: 8px; /*para corrigir as bordas*/
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after {
+    content: "";
+    background-image: url('../assets/search.svg');
+
+    width: 20px; /*largura*/
+    height: 20px; /*altura*/
+}
+
+#page-home main a strong {
+    flex: 1;
+    color: white; /*cor branca*/
+    text-align: center;
+}
